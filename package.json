@@ -1,0 +1,27 @@
+{
+  "name": "@medv/morph",
+  "version": "1.0.0",
+  "description": "Lightweight DOM morphing",
+  "type": "module",
+  "main": "morph.js",
+  "exports": "./morph.js",
+  "files": [
+    "morph.js"
+  ],
+  "scripts": {
+    "test": "vitest run"
+  },
+  "keywords": [
+    "dom",
+    "morph",
+    "morphing",
+    "diff",
+    "patch"
+  ],
+  "author": "Anton Medvedev",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^26.0.0",
+    "vitest": "^3.0.0"
+  }
+}
