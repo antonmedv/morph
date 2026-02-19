@@ -1,14 +1,5 @@
-import {describe, it, expect, beforeEach} from 'vitest'
-import {JSDOM} from 'jsdom'
+import {describe, it, expect} from 'vitest'
 import {morph} from './morph.js'
-
-let document
-
-beforeEach(() => {
-  const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>')
-  document = dom.window.document
-  globalThis.Node = dom.window.Node
-})
 
 function html(str) {
   const tpl = document.createElement('template')
