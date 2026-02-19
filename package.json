@@ -1,6 +1,6 @@
 {
   "name": "@medv/morph",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight DOM morphing",
   "type": "module",
   "main": "morph.js",
