@@ -13,12 +13,9 @@ npm install @medv/morph
 ```js
 import { morph } from '@medv/morph'
 
-const next =
-  div({class: 'container'},
-    text('Hello, '),
-    strong({}, 'world!'))
-
 const existing = document.querySelector('.container')
+
+const next = div({class: 'container'}, 'Hello, ', strong('world!'))
 
 morph(existing, next)
 ```
@@ -47,12 +44,8 @@ only updating attributes, text content, and children as needed.
     return createElement('div', attrs, ...children)
   }
   
-  function strong(attrs, ...children) {
-    return createElement('strong', attrs, ...children)
-  }
-  
-  function text(t) {
-    return document.createTextNode(t)
+  function strong(...children) {
+    return createElement('strong', {}, ...children)
   }
   ```
 ## License
